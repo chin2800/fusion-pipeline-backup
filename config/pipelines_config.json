@@ -1,0 +1,18 @@
+{
+  "environments": {
+    "dev": "kohler-dev.b.lucidworks.cloud",
+    "stg": "kohler-stg.b.lucidworks.cloud",
+    "prod": "kohler.b.lucidworks.cloud"
+  },
+  "brands": [
+    "kohler",
+    "annsacks",
+    "sterling",
+    "kohler-canada"
+  ],
+  "pipeline_types": [
+    "PLP",
+    "PDP",
+    "Search"
+  ]
+}
