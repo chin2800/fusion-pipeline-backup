@@ -35,7 +35,7 @@ for env, host in ENVS.items():
 
             pipeline_id = f"pipeline_{brand}_{ptype}"
 
-            url = f"https://{host}/api/objects/export?query-pipeline.ids={pipeline_id}&deep=true"
+            url = f"https://{host}/api/objects/export?query-pipeline.ids={pipeline_id}"
 
             file_dir = f"{BASE_DIR}/{env}/{brand}"
             os.makedirs(file_dir, exist_ok=True)
@@ -56,3 +56,6 @@ for env, host in ENVS.items():
 
             else:
                 print(f"Failed {pipeline_id} -> {r.status_code}")
+
+print(r.status_code)
+print(r.text[:200])
